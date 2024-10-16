@@ -15,11 +15,13 @@ const TVA=20;// declarer une constante
         console.log('le est '+le)
         let  le2=10;
         var v2=9;
+        const TVA=20;
+        
         console.log('le 2 est '+le2)
         
     }
 
-    // console.log('le 3 est '+le2)
+//  console.log('le 3 est '+le2)
     
 }
 
