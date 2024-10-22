@@ -42,23 +42,28 @@ if($x%2==0){
 //2- boucle while : utilisee pour un nombre d'iteration variable (repeter la demande de resaisie du mot de passe )
 
 $j=0;
-$c=0;
-++$c;
+$c=0;//0
+++$c;//1
 echo "<p>c est $c</p>";
-//while 1
+//while 1 : 0 a 3
 $trouve=false;
-while($j < 5 && $trouve==false){
+while($j < 5 && $trouve==false ){
 echo "<br>while 1 : j est $j<br>";
-if($j++==3)  $trouve=true;
+if($j++ == 3)  $trouve=true;
 // $j++;
 }
-//while 2 
-$trouve=false;
-while($j < 5 && $trouve==false){
-echo "<br>while 2 : j est $j<br>";
-if(++$j==3)  $trouve=true;
-// $j++;
+
+//while 2  : 4 
+//$c est 1, $j est 4
+$trouve=true;
+// true => 1, && => * , false =>0, || => +
+while(0 && $j < 5 && $trouve==false){//1*0+1
+    echo "<br>while 2 : j est $j<br>";
+    if(++$j==3)  $trouve=true;
+    if($j==7) break;
+    // $j++;
 }
+echo "<h6>la valeur de c apres la boucle while 2 est $c</h6>";
 
 //1,2 , 3 ,0,infini
 ?>
