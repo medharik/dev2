@@ -15,7 +15,7 @@ echo $tnote[0]." ".$tnote[count($tnote) - 1];
 //3- trouve le prix max et le prix min (correct)
 //4- creer 2 tableaux : un tableau qui contient des prix corrects et un autre des prix incorrects;
 // le prix moyen 
-//push : ajouter a la fin 
+//push : ajouter a la fin
 $n=[];
 // int t[3];
 //push de 9
