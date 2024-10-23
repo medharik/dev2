@@ -13,7 +13,7 @@ console.log(x,y,z);
 //ex2 :
 let c=10;
 while(c-- > 7){
-    console.log('A',c);
+    colog('A',c);
 }
 while(--c > 2){
     console.log('B',c);
