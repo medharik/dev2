@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javscript first test</title>
+</head>
+<body>
+<marquee onmouseover="stop();console.log('salut')"  onmouseout="start()" >NEWS</marquee>
+<img src="" width="200" id="image" alt="">
+<h3 id="titre"></h3>
+<h3 id="prix"></h3>
+
+<script>
+let image=document.getElementById('image');
+fetch('https://fakestoreapi.com/products/2')
+            .then(res=>res.json())
+            .then(json=>{
+                image.src=json.image;
+                document.getElementById('titre').innerHTML=json.title;
+                document.getElementById('prix').innerHTML=json.price;
+
+            })
+</script>
+</body>
+</html>
