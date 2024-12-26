@@ -1,0 +1,12 @@
+{
+  "name": "fct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "atelier-tri-unicite.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "fct",
+  "version": "1.0.0",
+  "description": "projets de prog ecole",
+  "main": "atelier-tri-unicite.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "harik",
+  "license": "ISC"
+}

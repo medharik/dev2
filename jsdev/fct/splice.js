@@ -1,3 +1,5 @@
+const { camelCase } = require("yargs-parser");
+
 const libelle=["hp","dell","sony","acer","legion"];
 
 const libelleRemoved=libelle.splice(1,3);
@@ -59,3 +61,10 @@ const camelize2=(s)=>{
     s.split('-').map((e,i)=> i===0? e:e.toUpperCase() );
 }
 console.log('camelize2',camelize("background-color"))
+function sum(a, b) {
+  return a + b;
+}
+const y=[1,2,3,5];
+const CamelCase=(s)=> s.split(/[ -]+/).map((e,i)=> i===0? e:e[0].toUpperCase() );
+console.log('camelCase',camelCase('b-co'));
+module.exports = {sum,y,camelCase};

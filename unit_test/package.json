@@ -1,0 +1,14 @@
+{
+  "name": "khaldi",
+  "version": "1.0.0",
+  "description": "projet JS pour ecole",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "harik",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
