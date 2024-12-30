@@ -39,7 +39,7 @@ let result = ar.map(function(item, index, array) {
   console.log(`somme est ${s}`);
   console.log(ar.some((e,i)=>{
     console.log(e,i);
-    return e==5
+    return e==5;
   }));
 const camelize=(str)=>{
 if(str.includes('-')){
