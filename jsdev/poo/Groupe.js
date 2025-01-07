@@ -15,6 +15,8 @@ class Groupe {
   afficherListeDesEtudiant() {
     this.etudiants.forEach(e=> e.afficher());
   }
+  
+
 }
 
 const othmane=new Etudiant("Elmlih","othmane",20,"homme");
