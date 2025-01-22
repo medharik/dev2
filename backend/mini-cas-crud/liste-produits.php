@@ -2,6 +2,10 @@
 require_once("Produit.class.php");
 
 $produits=Produit::all();//all methode statique (methode de classe) (pas this)
+
+// $produit1=Produit::findById(2);
+// print_r($produit1);
+
 // print_r($produits);
 ?>
 <!DOCTYPE html>
@@ -15,7 +19,7 @@ $produits=Produit::all();//all methode statique (methode de classe) (pas this)
 
 </head>
 
-<body>
+<body oncontextmenu="return false">
 
     <h2>Liste des produits</h2>
     <table class="table table-striped">
@@ -33,7 +37,7 @@ $produits=Produit::all();//all methode statique (methode de classe) (pas this)
                 <td><?php echo $p['id'];?></td>
                 <td><?=$p['libelle']?></td>
                 <td><?=$p['qtestock']?></td>
-                <td>Actions</td>
+                <td><a onclick="return  confirm('Supprimer?')" class="btn btn-danger btn-sm" href="delete-produit.php?id=<?php echo $p['id'];?>">S</a></td>
             </tr>
 <?php } ?>
         </tbody>

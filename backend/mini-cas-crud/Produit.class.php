@@ -5,6 +5,8 @@ class Produit
     //attributs 
     public $libelle;
     public $qtestock;
+
+    // $hp=new Produit("hp dv7",300);
     public function __construct($libelle, $qtestock)
     {
         $this->libelle = $libelle;
@@ -22,7 +24,7 @@ class Produit
         $rp->execute([$this->libelle, $this->qtestock]);
     }
     //supprimer
-    public function supprimer($id)
+    public static function supprimer($id)
     {
         //connexion bd
         $cnx = connecter_db();
@@ -54,7 +56,7 @@ class Produit
     }
     //selectionenr de selectionner produit par id
     //selectionner tous les produits
-    public function findById($id)
+    public static function findById($id)
     {
         //connexion bd
         $cnx = connecter_db();

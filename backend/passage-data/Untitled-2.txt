@@ -1,1 +1,1 @@
-passage/ transfert  de donnees entre pages web dynamiques 
+CRUD : CREATE (INSERT) ,READ (SELECT), UPDATE ET DELETE 
